@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Discover your next destination with Wintrip Safaris. Plan unforgettable safaris, coastal escapes, family trips and tailor-made journeys.">
+  <title>Wintrip Safaris | Discover Your Destination</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Wintrip Safaris home">
+        <img src="https://raw.githubusercontent.com/OliveAlila/wintrip-safaris/main/assets/images/wintrip-logo.png" alt="Wintrip Safaris">
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="add-listing" href="#contact">Plan a trip <span>＋</span></a>
+        <button class="quick-menu" aria-label="Jump to destination search" title="Find a destination"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16M8 4v4M15 10v4M11 16v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Your next story starts here</span>
+          <h1 id="hero-title">Discover <span>Your <em>Destination</em></span></h1>
+          <p>From the great African wilderness to the quiet coast, find a journey that feels made for you.</p>
+          <form class="search-panel" id="destination-search">
+            <label class="search-keyword"><span class="sr-only">What are you looking for?</span><input type="search" id="search-keyword" placeholder="Where would you like to go?"></label>
+            <label class="search-select"><span class="sr-only">Trip category</span><select id="search-category"><option value="all">All experiences</option><option value="safari">Safari</option><option value="coast">Coast & islands</option><option value="culture">Culture</option><option value="adventure">Adventure</option><option value="family">Family trips</option></select></label>
+            <label class="search-location"><span class="sr-only">Region</span><select id="search-region"><option value="all">Any region</option><option value="kenya">Kenya</option><option value="africa">Africa</option><option value="coast">Coast & islands</option><option value="beyond">Beyond Africa</option></select></label>
+            <button type="submit" class="search-button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Find a trip</span></button>
+          </form>
+          <div class="quick-categories" aria-label="Popular trip types">
+            <a href="#destinations" data-category="safari"><span class="tiny-icon">♧</span> Safaris</a>
+            <a href="#destinations" data-category="coast"><span class="tiny-icon">≈</span> Beach escapes</a>
+            <a href="#destinations" data-category="culture"><span class="tiny-icon">⌂</span> Culture</a>
+            <a href="#destinations" data-category="family"><span class="tiny-icon">♡</span> Family trips</a>
+            <a href="#destinations" data-category="adventure"><span class="tiny-icon">✧</span> Adventure</a>
+          </div>
+          <p class="search-feedback" id="search-feedback" aria-live="polite"></p>
+        </div>
+        <div class="hero-gallery" aria-label="Travel inspiration photos">
+          <figure class="gallery-image gallery-image-back"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="A scenic destination with mountains and open sky"></figure>
+          <figure class="gallery-image gallery-image-front"><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=85" alt="African wildlife safari landscape"></figure>
+          <div class="gallery-note"><span class="note-dot"></span><span><strong>Travel with purpose</strong><small>Moments worth remembering</small></span></div>
+          <span class="gallery-sparkle sparkle-one">✳</span><span class="gallery-sparkle sparkle-two">✧</span>
+        </div>
+      </div>
+      <div class="hero-decoration decoration-one"></div><div class="hero-decoration decoration-two"></div>
+    </section>
+
+    <section class="category-strip" aria-label="Browse travel categories">
+      <a href="#destinations" class="category-tile" data-category="safari">
+        <span class="category-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 17h34v21H7zM12 17v-5h24v5M17 24h14M17 30h14M17 35h6M11 38v4M37 38v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><strong>Safari journeys</strong><small>Into the wild</small>
+      </a>
+      <a href="#destinations" class="category-tile" data-category="coast">
+        <span class="category-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 29c5-4 9-4 14 0s9 4 14 0 7-4 10-2M5 36c5-4 9-4 14 0s9 4 14 0 7-4 10-2M24 7v14M24 21l-7-7M24 21l7-7M11 20h26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><strong>Coast & islands</strong><small>Slow down by the sea</small>
+      </a>
+      <a href="#destinations" class="category-tile" data-category="family">
+        <span class="category-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="13" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="11" cy="19" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="37" cy="19" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 40v-6c0-5 5-8 13-8s13 3 13 8v6M3 38v-5c0-4 3-6 7-6M45 38v-5c0-4-3-6-7-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><strong>Family escapes</strong><small>Make memories together</small>
+      </a>
+      <a href="#destinations" class="category-tile" data-category="adventure">
+        <span class="category-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="m24 5 4 11 11-4-4 11 8 7-12 1-7 12-5-12-12-2 9-8-2-12 10 6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><strong>Adventure</strong><small>Find your wild side</small>
+      </a>
+      <a href="#destinations" class="category-tile" data-category="culture">
+        <span class="category-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 19 24 8l19 11M9 20v20h30V20M17 40V25h14v15M15 22h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><strong>Culture & heritage</strong><small>Discover local stories</small>
+      </a>
+    </section>
+
+    <section class="destinations-section section" id="destinations">
+      <div class="section-heading centered-heading"><span class="eyebrow">Handpicked for curious travellers</span><h2>Top <em>destinations</em></h2><p>Explore places we love, from Kenya's iconic landscapes to unforgettable journeys beyond.</p></div>
+      <div class="filter-row" role="group" aria-label="Filter destinations">
+        <button class="filter-chip active" data-region="all">All destinations</button>
+        <button class="filter-chip" data-region="kenya">Kenya</button>
+        <button class="filter-chip" data-region="africa">Africa</button>
+        <button class="filter-chip" data-region="coast">Coast & islands</button>
+        <button class="filter-chip" data-region="beyond">Beyond Africa</button>
+      </div>
+      <div class="destination-grid" id="destination-grid">
+        <article class="destination-card"><a class="destination-photo" href="#contact"><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=850&q=82" alt="Maasai Mara safari" loading="lazy"><span class="photo-badge">WINTRIP PICK</span><button class="save-button" type="button" aria-label="Save Maasai Mara">♡</button></a><div class="card-body"><div class="card-meta"><span class="stars">★★★★★</span><span>Safari</span></div><h3>Maasai Mara</h3><p class="card-location"><span>⌖</span> Narok County, Kenya</p><div class="card-bottom"><span>Wildlife & the Great Migration</span><a href="#contact" data-destination="Maasai Mara" class="card-link">Explore <span>↗</span></a></div></div></article>
+        <article class="destination-card"><a class="destination-photo" href="#contact"><img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=850&q=82" alt="Amboseli national park landscape" loading="lazy"><span class="photo-badge">WILDLIFE</span><button class="save-button" type="button" aria-label="Save Amboseli">♡</button></a><div class="card-body"><div class="card-meta"><span class="stars">★★★★★</span><span>Safari</span></div><h3>Amboseli</h3><p class="card-location"><span>⌖</span> Kajiado County, Kenya</p><div class="card-bottom"><span>Elephants & mountain views</span><a href="#contact" data-destination="Amboseli" class="card-link">Explore <span>↗</span></a></div></div></article>
+        <article class="destination-card"><a class="destination-photo" href="#contact"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=850&q=82" alt="Blue ocean and sandy coast" loading="lazy"><span class="photo-badge">COASTAL ESCAPE</span><button class="save-button" type="button" aria-label="Save Diani Beach">♡</button></a><div class="card-body"><div class="card-meta"><span class="stars">★★★★★</span><span>Beach</span></div><h3>Diani Beach</h3><p class="card-location"><span>⌖</span> Kwale County, Kenya</p><div class="card-bottom"><span>Soft sand & Indian Ocean</span><a href="#contact" data-destination="Diani Beach" class="card-link">Explore <span>↗</span></a></div></div></article>
+        <article class="destination-card"><a class="destination-photo" href="#contact"><img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=850&q=82" alt="Historic coastal island streets" loading="lazy"><span class="photo-badge">CULTURE</span><button class="save-button" type="button" aria-label="Save Lamu">♡</button></a><div class="card-body"><div class="card-meta"><span class="stars">★★★★★</span><span>Culture</span></div><h3>Lamu Island</h3><p class="card-location"><span>⌖</span> Lamu County, Kenya</p><div class="card-bottom"><span>Swahili heritage & island life</span><a href="#contact" data-destination="Lamu Island" class="card-link">Explore <span>↗</span></a></div></div></article>
+        <article class="destination-card"><a class="destination-photo" href="#contact"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=850&q=82" alt="Lake and mountains in a scenic valley" loading="lazy"><span class="photo-badge">NATURE</span><button class="save-button" type="button" aria-label="Save Naivasha">♡</button></a><div class="card-body"><div class="card-meta"><span class="stars">★★★★★</span><span>Outdoors</span></div><h3>Lake Naivasha</h3><p class="card-location"><span>⌖</span> Nakuru County, Kenya</p><div class="card-bottom"><span>Lakeside calm & Rift Valley views</span><a href="#contact" data-destination="Lake Naivasha" class="card-link">Explore <span>↗</span></a></div></div></article>
+        <article class="destination-card"><a class="destination-photo" href="#contact"><img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=850&q=82" alt="Island escape by the sea" loading="lazy"><span class="photo-badge">ISLAND ESCAPE</span><button class="save-button" type="button" aria-label="Save Zanzibar">♡</button></a><div class="card-body"><div class="card-meta"><span class="stars">★★★★★</span><span>Island</span></div><h3>Zanzibar</h3><p class="card-location"><span>⌖</span> Tanzania</p><div class="card-bottom"><span>Spice island & turquoise water</span><a href="#contact" data-destination="Zanzibar" class="card-link">Explore <span>↗</span></a></div></div></article>
+        <article class="destination-card"><a class="destination-photo" href="#contact"><img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=850&q=82" alt="Cape Town mountain and coast" loading="lazy"><span class="photo-badge">CITY & NATURE</span><button class="save-button" type="button" aria-label="Save Cape Town">♡</button></a><div class="card-body"><div class="card-meta"><span class="stars">★★★★★</span><span>City</span></div><h3>Cape Town</h3><p class="card-location"><span>⌖</span> South Africa</p><div class="card-bottom"><span>Mountain, city & coast</span><a href="#contact" data-destination="Cape Town" class="card-link">Explore <span>↗</span></a></div></div></article>
+        <article class="destination-card"><a class="destination-photo" href="#contact"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=850&q=82" alt="Dubai skyline in warm light" loading="lazy"><span class="photo-badge">BEYOND AFRICA</span><button class="save-button" type="button" aria-label="Save Dubai">♡</button></a><div class="card-body"><div class="card-meta"><span class="stars">★★★★★</span><span>City escape</span></div><h3>Dubai</h3><p class="card-location"><span>⌖</span> United Arab Emirates</p><div class="card-bottom"><span>Desert experiences & skyline</span><a href="#contact" data-destination="Dubai" class="card-link">Explore <span>↗</span></a></div></div></article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No matching destinations. Try another region or search term.</p>
+      <div class="section-bottom"><span>Find the trip that feels like yours.</span><a class="outline-button" href="#contact">Explore all journeys <span>→</span></a></div>
+    </section>
+
+    <section class="feature-band" id="about">
+      <div class="feature-photo"><img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=85" alt="Wildlife in a natural landscape" loading="lazy"></div>
+      <div class="feature-copy"><span class="eyebrow">More than a destination</span><h2>Travel well.<br><em>Feel more.</em></h2><p>At Wintrip Safaris, the best journeys are built around what matters to you. Explore wildlife, culture, coastlines and new perspectives with a trip shaped to your pace and interests.</p><a class="green-button" href="#contact">Let's plan together <span>↗</span></a></div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="contact-copy"><span class="eyebrow">Let's make it happen</span><h2>Where will your<br><em>story take you?</em></h2><p>Share a destination you're curious about and our team can help you explore the options.</p><a href="mailto:wintripsafarishelp@gmail.com" class="contact-email">wintripsafarishelp@gmail.com <span>↗</span></a></div><div class="contact-card"><span class="contact-card-icon">✧</span><h3>Your next adventure starts with a conversation.</h3><p>Tell us what kind of trip you have in mind and we'll help you plan the next step.</p><a class="green-button" href="mailto:wintripsafarishelp@gmail.com?subject=Plan%20a%20Wintrip%20journey">Enquire about a trip <span>→</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><a class="brand footer-brand" href="#home"><img src="https://raw.githubusercontent.com/OliveAlila/wintrip-safaris/main/assets/images/wintrip-logo.png" alt="Wintrip Safaris"></a><p>Thoughtfully planned journeys across Kenya, Africa and beyond.</p><div class="footer-links"><a href="#about">About</a><a href="#destinations">Destinations</a><a href="#experiences">Experiences</a><a href="#contact">Contact</a></div><span class="copyright">© 2026 Wintrip Safaris</span></div></footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
